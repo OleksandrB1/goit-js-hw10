@@ -21,6 +21,5 @@ else {
     backgroundBody.classList.add(Theme.DARK);
     backgroundBody.classList.remove(Theme.LIGHT);
     localStorage.setItem('bgrBody', `${Theme.DARK}`);
-  }
-}
+  } }
 menuList.insertAdjacentHTML('afterbegin', menuTmp(menu));
