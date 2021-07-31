@@ -4,17 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw10/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OleksandrB1/goit-js-hw10.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oleksandr Boiko <<oleksandrboi56@gmail.com>>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OleksandrB1/goit-js-hw10/issues"
   },
-  "homepage": "https://github.com/OleksandrB1/goit-js-hw10#readme"
+  "homepage": "https://github.com/OleksandrB1/goit-js-hw10#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.1"
+  }
 }
