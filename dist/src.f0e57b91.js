@@ -9,4 +9,4 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=s(require("./templates/menu-list.hbs")),t=s(require("./menu.json"));function s(e){return e&&e.__esModule?e:{default:e}}var a={LIGHT:"light-theme",DARK:"dark-theme"},r=document.querySelector(".js-menu"),c=document.querySelector("#theme-switch-toggle"),o=document.querySelector("body");function l(){o.classList.contains(a.DARK)?(o.classList.add(a.LIGHT),o.classList.remove(a.DARK),localStorage.setItem("bgrBody","".concat(a.LIGHT))):(o.classList.add(a.DARK),o.classList.remove(a.LIGHT),localStorage.setItem("bgrBody","".concat(a.DARK)))}c.addEventListener("change",l),localStorage.getItem("bgrBody")===a.DARK&&(o.classList.add(a.DARK),c.setAttribute("checked","true")),r.insertAdjacentHTML("afterbegin",(0,e.default)(t.default));
 },{"./templates/menu-list.hbs":"g4Eb","./menu.json":"mA8c"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw10/src.f0e57b91.js.map
+//# sourceMappingURL=/goit-js-hw10/src/src.f0e57b91.js.map
