@@ -5,12 +5,13 @@ const Theme = {LIGHT: 'light-theme', DARK: 'dark-theme'};
 const menuList = document.querySelector('.js-menu');
 const themeSwitch = document.querySelector('#theme-switch-toggle');
 const backgroundBody = document.querySelector('body');
+backgroundBody.classList.add(Theme.LIGHT);
 
 themeSwitch.addEventListener('change', clickBtn);
 if (localStorage.getItem('bgrBody') === Theme.DARK) {
   backgroundBody.classList.add(Theme.DARK);
   themeSwitch.setAttribute('checked', 'true');
-}
+  backgroundBody.classList.remove(Theme.LIGHT);}
 function clickBtn() {
   if (backgroundBody.classList.contains(Theme.DARK)) {
     backgroundBody.classList.add(Theme.LIGHT);
